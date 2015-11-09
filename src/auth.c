@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
+#include <time.h>
 #include <arpa/inet.h>
 #include <sys/socket.h>
 #include <linux/if_arp.h>
