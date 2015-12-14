@@ -1,4 +1,4 @@
-CFLAGS += -lcrypto
+CFLAGS += -lcrypto -fgnu89-inline
 #LDFLAGS += -lcrypto
 
 gduth3c: main.o auth.o mem_clr.o md5_one.o md5_dgst.o
