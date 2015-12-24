@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
+#include <sys/time.h>
 #include <time.h>
 #include <arpa/inet.h>
 #include <sys/socket.h>
@@ -81,7 +82,7 @@ int auth_init()
     return 0;
 }
 
-void set_socket_timeout(__time_t sec) {
+void set_socket_timeout(time_t sec) {
     struct timeval timeout;
     timeout.tv_sec = sec;
     timeout.tv_usec = 50000;
